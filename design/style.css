@@ -64,9 +64,19 @@ html {
 .hero-section-1 {
   flex: 3;
   margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.hero-section-1 .hero-img img {
+
+.hero-section-1 .hero-img{
   width: 100%;
+  height: 350px;
+}
+
+.hero-section .hero-img img{
+  width: 100%;
+  height: 100%;
 }
 
 .hero-img-about {
@@ -118,12 +128,13 @@ html {
 .hero-section-2 h2 {
   color: #efa84f;
   font-size: 2rem;
+  padding:0 0 0 9px;
 }
-.questions{
-  padding:5px 5px 20px 10px;
-  border-bottom:2px solid #5f5f79 ;
+.questions {
+  padding: 5px 5px 20px 10px;
+  border-bottom: 2px solid #5f5f79;
 }
-.questions:last-child{
+.questions:last-child {
   border-bottom: none;
 }
 .questions h4 {
@@ -224,28 +235,31 @@ html {
   .navigation {
     padding: 25px 0 25px 0;
   }
-  .hero-img{
+  .hero-img {
     height: 250px;
     width: 100%;
   }
-  .hero-img img{
+  .hero-img img {
     height: 100%;
     width: 100%;
   }
+  .questions {
+    padding: 14px 5px 10px 10px;
+  }
   .hero-section-1 {
     margin-right: 0;
-}
-.hero-img-about {
-  flex-direction: column;  
-}
-.hero-img-about .main-text h2 {
-  line-height: normal;
-  margin-top: 17px;
-}
-.read-more-col input[type="button"] {
-  margin: 10px 0 20px 0;
-}
-.hero-section-2 {
-  margin-top: 20px;
-}
+  }
+  .hero-img-about {
+    flex-direction: column;
+  }
+  .hero-img-about .main-text h2 {
+    line-height: normal;
+    margin-top: 17px;
+  }
+  .read-more-col input[type="button"] {
+    margin: 10px 0 20px 0;
+  }
+  .hero-section-2 {
+    margin-top: 20px;
+  }
 }
